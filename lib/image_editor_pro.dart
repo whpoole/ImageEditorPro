@@ -181,7 +181,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                   screenshotController
                       .capture(
                           delay: Duration(milliseconds: 500), pixelRatio: 1.5)
-                      .then((File image) async {
+                      .then((Uint8List image) async {
                     //print("Capture Done");
 
                     final paths = await getExternalStorageDirectory();
