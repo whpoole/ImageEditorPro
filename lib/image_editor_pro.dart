@@ -16,6 +16,7 @@ import 'package:image_editor_pro/modules/textview.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:signature/signature.dart';
+import 'dart:typed_data';
 
 TextEditingController heightcontroler = TextEditingController();
 TextEditingController widthcontroler = TextEditingController();
