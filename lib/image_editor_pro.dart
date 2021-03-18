@@ -184,7 +184,7 @@ class _ImageEditorProState extends State<ImageEditorPro> {
                           delay: Duration(milliseconds: 500), pixelRatio: 1.5)
                       .then((Uint8List timage) async {
                     //print("Capture Done");
-                    Image image = timage;
+                    File image = File.fromRawPath(timage);;
                     final paths = await getExternalStorageDirectory();
                     await image.copy(paths.path +
                         '/' +
